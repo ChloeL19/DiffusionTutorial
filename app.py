@@ -4,32 +4,35 @@ import streamlit as st
 def home():
     st.title('Home Page')
     st.write('Welcome to the Home Page!')
-    st.image('assets/bobtail.jpg', caption='a bobtail squid')
 
-def about():
-    st.title('About Page')
-    st.write('This is the About Page.')
+def browse_examples():
+    st.title('Browse Examples')
+    st.write('This is the Browse Examples Page.')
 
-def contact():
-    st.title('Contact Page')
-    st.write('This is the Contact Page.')
+def ov_and_qk_circuits():
+    st.title('OV and QK Circuits')
+    st.write('This is the OV and QK Circuits Page.')
+
+def copy_suppression_preserving_ablation():
+    st.title('Copy Suppression-Preserving Ablation')
+    st.write('This is the Copy Suppression-Preserving Ablation Page.')
+
+def anti_induction_vs_copy_suppression():
+    st.title('Anti Induction vs Copy Suppression')
+    st.write('This is the Anti Induction vs Copy Suppression Page.')
 
 # Sidebar for navigation
 st.sidebar.title('Navigation')
-if st.sidebar.button('Home'):
-    page = 'Home'
-elif st.sidebar.button('About'):
-    page = 'About'
-elif st.sidebar.button('Contact'):
-    page = 'Contact'
-else:
-    page = 'Home'
+page = st.sidebar.radio('Go to', ['Home', 'Browse Examples', 'OV and QK circuits', 'Copy Suppression-Preserving Ablation', 'Anti Induction vs Copy Suppression'])
 
 # Display the selected page
 if page == 'Home':
     home()
-elif page == 'About':
-    about()
-elif page == 'Contact':
-    contact()
-
+elif page == 'Browse Examples':
+    browse_examples()
+elif page == 'OV and QK circuits':
+    ov_and_qk_circuits()
+elif page == 'Copy Suppression-Preserving Ablation':
+    copy_suppression_preserving_ablation()
+elif page == 'Anti Induction vs Copy Suppression':
+    anti_induction_vs_copy_suppression()
