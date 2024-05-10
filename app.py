@@ -5,6 +5,7 @@ def home():
     st.title('Overview')
     st.write('What is Diffusion?')
     st.header('Notes on online lectures')
+    st.subheader('Introduction grist')
     st.write(
         """
         What if, given a set of images, we could create--from seemingly thin air--an image that looks like it should belong exactly in that set?
@@ -22,6 +23,7 @@ def home():
         While we're still talking at the high level, here, it's worth noting that sampling from *any* distribution is powerful; it means we can also sample from conditional distributions. For example, we can sample from the distribution of images that are most probable given the statement "I love golden retrievers". We can condition on sentiments and ideas expressed in different modalities.
         """
     )
+    st.subheader("Intro to flavors of diffusion")
     st.write(
     """Compression is intelligence. Previous work on variational autoencoders reveals we can store compressed representations of data in a latent space.
     See my post on how variational autoencoders work here: [LINK]. So what if we perform diffusion not in pixel space but in latent space?
