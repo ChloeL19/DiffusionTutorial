@@ -5,6 +5,12 @@ def home():
     st.title('Overview')
     st.write('What is Diffusion?')
     st.header('Notes on online lectures')
+    st.subheader('Meaty math')
+    st.write(
+        """
+        
+        """
+    )
     st.subheader('Introduction grist')
     st.write(
         """
@@ -31,6 +37,10 @@ def home():
     st.header('Questions Confusing Chloe')
     st.write('How do you define MCMC over graphs in which neighbors vary with continuous values? i.e. in which neighbors are images with pixel values that differ by an differentiably small amount?')
     st.write('What does it really mean to align two modalities in latent space? like text and images? what does it mean to relate images with certain meaning to text with certain meaning?')
+    st.write('How is assuming conditional independence between timesteps the same as assuming the markov property in a markov chain? what if I want to condition on multiple previous timesteps?')
+    st.write('What\'s the proof that adding little bits of gaussian noise will make us converge to gaussian distribution? if we wanted to converge to different type of distribution we would need to add different types of noise at each step or something? how can I prove the convergence property of these sorts of distributions?')
+    st.write('Is KL divergence a metric on the space of probability distributions?')
+    st.write('O-U processes seem to always assume the previous step is gaussian.... does this break down as we get closer and closer to our initial distribution? ')
 
 def browse_examples():
     st.title('Browse Examples')
