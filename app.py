@@ -23,7 +23,7 @@ def anti_induction_vs_copy_suppression():
 
 # Sidebar for navigation
 st.sidebar.title('Navigation')
-page = st.sidebar.radio('Go to', ['Home', 'Browse Examples', 'OV and QK circuits', 'Copy Suppression-Preserving Ablation', 'Anti Induction vs Copy Suppression'])
+page = st.sidebar.radio('Tutorial Sections:', ['Home', 'Browse Examples', 'OV and QK circuits', 'Copy Suppression-Preserving Ablation', 'Anti Induction vs Copy Suppression'])
 
 # Display the selected page
 if page == 'Home':
