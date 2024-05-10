@@ -15,7 +15,15 @@ def contact():
     st.write('This is the Contact Page.')
 
 # Sidebar for navigation
-page = st.sidebar.selectbox('Select a page:', ['Home', 'About', 'Contact'])
+st.sidebar.title('Navigation')
+if st.sidebar.button('Home'):
+    page = 'Home'
+elif st.sidebar.button('About'):
+    page = 'About'
+elif st.sidebar.button('Contact'):
+    page = 'Contact'
+else:
+    page = 'Home'
 
 # Display the selected page
 if page == 'Home':
