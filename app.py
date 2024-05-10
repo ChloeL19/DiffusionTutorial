@@ -2,8 +2,8 @@ import streamlit as st
 
 # Define a function for each page
 def home():
-    st.title('Home Page')
-    st.write('Welcome to the Home Page!')
+    st.title('Overview')
+    st.write('What is Diffusion?')
 
 def browse_examples():
     st.title('Browse Examples')
