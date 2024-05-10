@@ -4,6 +4,7 @@ import streamlit as st
 def home():
     st.title('Overview')
     st.write('What is Diffusion?')
+    st.header('Questions Confusing Chloe')
 
 def browse_examples():
     st.title('Browse Examples')
