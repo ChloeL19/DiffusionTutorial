@@ -19,7 +19,7 @@ def home():
         
         This is what diffusion models do.
         
-        While we're still talking at the high level, here, it's worth noting that sampling from *any* distribution is powerful--it means we can also sample from conditional distributions. For example, we can sample from the distribution of images that are most probable given the statement "I love golden retrievers". We can condition on sentiments and ideas expressed in different modalities.
+        While we're still talking at the high level, here, it's worth noting that sampling from *any* distribution is powerful; it means we can also sample from conditional distributions. For example, we can sample from the distribution of images that are most probable given the statement "I love golden retrievers". We can condition on sentiments and ideas expressed in different modalities.
         """
     )
     st.write(
